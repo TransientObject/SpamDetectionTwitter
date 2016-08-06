@@ -1,0 +1,59 @@
+---
+infochimps_schema:
+  title: Infochimps Simple Schema (ICSS)
+  version: 0.1.1
+  generated_at: Wed Aug 18 04:31:52 +0000 2010
+  url: "http://infochimps.org/datasets/twitter-spammers-list.yaml"
+  description: >-
+    This is an Infochimps Simple Schema (ICSS).
+
+    It describes data on Infochimps.org and is meant to be both human
+    and machine readable.
+
+    An ICSS file is distributed with every download on Infochimps and
+    is also available by request to the above URL.
+    
+    ICSS files bundled with downloads are generated at the time the
+    download was created so they can become out of date as changes are
+    made to the data.  If this ICSS came with data you downloaded then
+    it is possible that it is already out of date.  You can get the
+    most recent version at the URL above.
+
+dataset:
+  id:                  16098
+  title:               Twitter Spammers List
+  subtitle:            ~
+  main_link:           ~
+  url:                 "http://infochimps.org/datasets/twitter-spammers-list"
+  created_at:          "Wed Aug 18 04:30:47 UTC 2010"
+  updated_at:          "Wed Aug 18 04:30:47 UTC 2010"  
+  tags:              [ data,list,machine-learning,machinelearning,spam,spam-list,twitter ]
+  categories:        [ ~ ]
+  created_by:
+    id:                675  
+    username:          Ganglion
+    name:              Jacob Perkins
+    institution:       ~
+    main_link:         ~
+    url:               "http://infochimps.org/users/Ganglion"
+  description: >-
+    h1. Description
+    
+    A flat text list of human classified spam accounts from http://twitter.com.
+    
+    h3. Fields:
+    
+    twitter_user_screen_name: twitter screen name of spam account
+    
+    h3. Source(s):
+    
+    http://www.writing.com/main/view_item/item_id/1618035-Twitter-Spammers
+    
+  license:
+      
+  sources:
+    
+  packages: 
+      
+  fields:
+    

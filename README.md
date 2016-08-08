@@ -1,4 +1,4 @@
-twitter-spammer-detector
+SpamDetectionTwitter
 ========================
 
 Detecting Spammers in Twitter
@@ -8,7 +8,9 @@ Using J48 Classifier to build a classifier and then train it to detect spammers 
 58 different attributes are extracted for each users.
 
 Detection of Spammers in Twitter
-Priya Narayana Subramanian
+
+
+Author - Priya Narayana Subramanian
 
 December 5, 2013
 Abstract
@@ -51,3 +53,40 @@ goo.gl/sX7gIV", people would normally open the link. More than 99% of the intern
 know the implications of hitting a bad URL. This can be detected and eliminated only to an extent,
 partly due to the high volume of tweets that 
 ows through the network during this time.
+
+There has been a lot of works going on recently to detect spammers. 
+
+Our work can be split as,
+
+1. Collection of Data. Ground Truth has been obtained from http://homepages.dcc.ufmg.br/
+~fabricio/spammerscollection.html, the author of the first paper. Similarly Ground truth
+for Non Spammers are collected. Lastly, users who tweeted about trending topics are identified
+as a test set.
+2. Constructing the Classifier. Using weka, an opensource tool for machine learning, a classifier is
+generated from the groundtruth.
+3. Analysis of the features. Out of the 58 features (we use only 58 of the 62), we analyze what
+features are more important in the decision making process.
+
+3 Twitter users' features and Main Result
+
+We evaluate 58 features of the pre-classified dataset of spammers and non-spammer users. The 58
+features would be divided into two category: content attributes and user behavior attributes. Content
+attributes are properties of the text of tweets posted by users, which capture specific properties related
+to the way users write tweets. User behavior attributes capture specific properties of the user behavior
+in terms of the posting frequency, social interactions, and in
+uence on the Twitter network.
+
+3.1 Content Attributes
+In total, we have 37 attributes related to content of the tweets. That is, number of URLs in each
+tweet, number of hashtags, number of words on each tweet, number of users mentioned in each tweet,
+number of character, count of numbers and so on. The list of attributes can be found in the appendix
+
+3.2 User behavior Attributes
+In total, we have 21 attributes about the user behavior. As assumed and according to the measurement
+of our dataset, spammers are more likely to have less followers, more followees, lower number of times
+the user was mentioned, lower number of times the user was replied to, lower number of times the
+user replied someone, lower number of followees of the users followers (since they are more likely to
+be spammers as well), more fixed time between tweets, and more fixed tweets posted per day and per
+week.
+
+
